@@ -17,12 +17,9 @@ LEGENDS = DEV.SUDO_USERS + [DEV.OWNER_ID] + KeshavX
 START_MARKUP_STR = IKM(
                [
                [
-               IKB("💭 Owner 💭", url="t.me/NotKeshav"),
-               IKB("✨ Support ✨", url="t.me/SpLBots")
+               IKB("💭 Owner 💭", url="t.me/WIZARD_FF_99"),
+               IKB("✨ Support ✨", url="t.me/Geek_verse")
                ],
-               [
-               IKB("🔥 Repo 🔥", url="https://github.com/ShutupKeshav/SpLSpamBot")
-               ]
                ]
                )
 
@@ -30,7 +27,7 @@ START_MARKUP_DEV = IKM(
                [
                [
                IKB("💫 Commands 💫", callback_data="cmds"),
-               IKB("💭 Support 💭", url="t.me/SpLBots")
+               IKB("💭 Support 💭", url="t.me/Geek_verse")
                ]
                ]
                )  
@@ -51,7 +48,7 @@ async def start(_, m):
     await m.reply_photo(START_PIC, caption=txt, reply_markup=START_MARKUP_STR)
     return
 
-HELP_TEXT = "★ 𝙎𝙥𝙇 𝙓 𝙎𝙥𝙖𝙢 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐅𝐨𝐫 𝐇𝐞𝐥𝐩"
+HELP_TEXT = "★  𝙎𝙥𝙖𝙢𝙓 𝙃𝙚𝙡𝙥 𝙈𝙚𝙣𝙪 ★\n𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧𝐬 𝐅𝐨𝐫 𝐇𝐞𝐥𝐩"
 
 SPAM_HELP = spam_msg = f"""
 **Help Spam Cmds**
@@ -93,7 +90,7 @@ Command :
 2) {hl}dreplyraid <username>
 
 
-**© @NotKeshav**
+**© @WIZARD_FF_99**
 """
 
 EXTRA_HELP = f"""
@@ -114,7 +111,7 @@ Command :
 1) {hl}leave <group/chat id>
 2) {hl}leave : Type in the Group bot will auto leave that group
 
-**© @NotKeshav**
+**© @WIZARD_FF_99**
 """
 
 HELP_MARKUP = IKM(
@@ -127,8 +124,8 @@ HELP_MARKUP = IKM(
               IKB("💭 Extras 💭", callback_data="extra")
               ],
               [
-              IKB("😶‍🌫️ Owner 😶‍🌫️", url="t.me/NotKeshav"),
-              IKB("✨ Support ✨", url="t.me/SpLBots")
+              IKB("😶‍🌫️ Owner 😶‍🌫️", url="t.me/WIZARD_FF_99"),
+              IKB("✨ Support ✨", url="t.me/Geek_verse")
               ]
               ]
               )
@@ -149,31 +146,31 @@ CLOSE_MARKUP = IKM(
 
 async def cmds_cbq(_, q):
     if not await verify(q.from_user.id):
-        return await q.answer("START ME IN PRIVATE AND GET SOURCE CODE OF THIS BOT ! AND DEPLOY YOUR OWN !", show_alert=True)
+        return await q.answer("START ME IN PRIVATE  !", show_alert=True)
     await q.answer()
     await q.edit_message_text(text=HELP_TEXT, reply_markup=HELP_MARKUP)
 
 async def spam_cbq(_, q):
     if not await verify(q.from_user.id):
-        return await q.answer("START ME IN PRIVATE AND GET SOURCE CODE OF THIS BOT ! AND DEPLOY YOUR OWN !", show_alert=True)
+        return await q.answer("START ME IN PRIVATE  !", show_alert=True)
     await q.answer()
     await q.edit_message_text(text=SPAM_HELP, reply_markup=CLOSE_MARKUP)
 
 async def raid_cbq(_, q):
     if not await verify(q.from_user.id):
-        return await q.answer("START ME IN PRIVATE AND GET SOURCE CODE OF THIS BOT ! AND DEPLOY YOUR OWN !", show_alert=True)
+        return await q.answer("START ME IN PRIVATE !", show_alert=True)
     await q.answer()
     await q.edit_message_text(text=RAID_HELP, reply_markup=CLOSE_MARKUP)
 
 async def extra_cbq(_, q):
     if not await verify(q.from_user.id):
-        return await q.answer("START ME IN PRIVATE AND GET SOURCE CODE OF THIS BOT ! AND DEPLOY YOUR OWN !", show_alert=True)
+        return await q.answer("START ME IN PRIVATE  !", show_alert=True)
     await q.answer()
     await q.edit_message_text(text=EXTRA_HELP, reply_markup=CLOSE_MARKUP)
 
 async def close_cbq(_, q):
     if not await verify(q.from_user.id):
-        return await q.answer("START ME IN PRIVATE AND GET SOURCE CODE OF THIS BOT ! AND DEPLOY YOUR OWN !", show_alert=True)
+        return await q.answer("START ME IN PRIVATE  !", show_alert=True)
     await q.answer()
     await q.message.delete()
 
