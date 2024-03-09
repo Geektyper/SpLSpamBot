@@ -154,19 +154,19 @@ async def spam_cbq(_, q):
     if not await verify(q.from_user.id):
         return await q.answer("START ME IN PRIVATE  !", show_alert=True)
     await q.answer()
-    await q.edit_message_text(text=SPAM_HELP, reply_markup=CLOSE_MARKUP)
+    await q.edit_message_text(text=SPAM_HELP, reply_markup=HELP_MARKUP)
 
 async def raid_cbq(_, q):
     if not await verify(q.from_user.id):
         return await q.answer("START ME IN PRIVATE !", show_alert=True)
     await q.answer()
-    await q.edit_message_text(text=RAID_HELP, reply_markup=CLOSE_MARKUP)
+    await q.edit_message_text(text=RAID_HELP, reply_markup=HELP_MARKUP)
 
 async def extra_cbq(_, q):
     if not await verify(q.from_user.id):
         return await q.answer("START ME IN PRIVATE  !", show_alert=True)
     await q.answer()
-    await q.edit_message_text(text=EXTRA_HELP, reply_markup=CLOSE_MARKUP)
+    await q.edit_message_text(text=EXTRA_HELP, reply_markup=HELP_MARKUP)
 
 async def close_cbq(_, q):
     if not await verify(q.from_user.id):
