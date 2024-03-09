@@ -17,18 +17,18 @@ class TOKENS:
     BOT_TOKEN_10 = os.getenv("BOT_TOKEN_10", "")
 
 class DATABASE:
-    MONGO_DB_URL = os.getenv("MONGO_DB_URL", "")
+    MONGO_DB_URL = os.getenv("MONGO_DB_URL", "mongodb+srv://manojmandal283:tq3vFczbP01ythdH@spoiled.bp4imnq.mongodb.net/?retryWrites=true&w=majority")
 
 class DEV:
     OWNER_ID = int(os.getenv("OWNER_ID", ""))
     
     # DONT EDIT THIS 
-    SUDO_USERS = [5834211089] 
+    SUDO_USERS = [6919722801] 
     # YOU CAN ADD SUDO USING /addsudo
 
 class STUFF:
-    ALIVE_PIC = os.getenv("ALIVE_PIC", "")
-    HELP_PIC = os.getenv("HELP_PIC", "")
-    START_PIC = os.getenv("START_PIC", "")
+    ALIVE_PIC = os.getenv("ALIVE_PIC", "https://telegra.ph/file/ce6ed167fd8d2e0b9b2df.jpg")
+    HELP_PIC = os.getenv("HELP_PIC", "https://telegra.ph/file/ce6ed167fd8d2e0b9b2df.jpg")
+    START_PIC = os.getenv("START_PIC", "https://telegra.ph/file/ce6ed167fd8d2e0b9b2df.jpg")
     COMMAND_HANDLER = os.getenv("COMMAND_HANDLER", "!")
     ALLOW_PORN = os.getenv("ALLOW_PORN", True) # REPLACE 'True' BY 'False' IF U WANT TO DISABLE PORN
