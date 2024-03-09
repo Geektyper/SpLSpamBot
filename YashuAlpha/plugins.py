@@ -44,7 +44,7 @@ async def start(_, m):
     if str(m.chat.id)[0] == "-":
         return
     men = m.from_user.mention
-    txt = f"**Hello !! {men}\nNice To Meet You, Well I Am {bot_name}, A Powerfull Spam Bot.** \n\n**If You Want Your Own Spam Bots You Can Deploy From Button Given Below.** \n\n**Powered By : [𝙎𝙥𝙇](https://t.me/SpLBots)**"
+    txt = f"**Hello !! {men}\nNice To Meet You, Well I Am {bot_name}, A Powerfull Spam Bot.** \n\n**If You Want Your Own Spam Bots You Can Deploy From Button Given Below.** \n\n**Powered By : [WIZARD](https://t.me/WIZARD_FF_99)**"
     await m.reply_photo(START_PIC, caption=txt, reply_markup=START_MARKUP_STR)
     return
 
@@ -63,7 +63,7 @@ Command :
 1) {hl}delayspam <delay> <count> <message to spam> (you can reply any message if you want bot to reply that message and do spamming)
 2) {hl}delayspam <delay> <count> <replying any message>
 
-** © @NotKeshav**
+** © @WIZARD_FF_99**
 """
 
 RAID_HELP = f"""
