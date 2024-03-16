@@ -1,121 +1,112 @@
 {
-  "name": "Spam Bot By Hades Network !",
-  "description": "Pyrogram based Spam by Hades !",
-  "logo": "https://te.legra.ph/file/2f370ea06233326280613.jpg",
-  "keywords": [
-    "telegram",
-    "bot",
-    "python",
-    "pyrogram"
-  ],
-    "buildpacks": [{
-    "url": "heroku/python"
-  }],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "free"
-    }
-  },
-  "addons": [
-      {
-         "options": {
-            "version": "15"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-  "repository": "https://github.com/Timeisnotwaiting/HadesAfk",
+      "name": "SpamBot ",
+      "description": "A telethon Based Span Bots With Many Cmds Fast And Stable",
+      "logo": "https://telegra.ph/file/ec832fc9107fd21edfee3.jpg",
+      "keywords": [
+        "telegram",
+        "Telethon",
+        "telegram-bot",
+        "SPLXSpam",
+        "SpamBots"
+      ],   
+  "repository": "https://github.com/Geektyper/Splspambot",
+  "website": "Geektyper.github.io",
+  "success_url": "https://t.me/notrealgeek",
   "env": {
-    "API_ID": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
+       "API_ID": {
+        "description": "Fill Api ID Take this value from My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "ALIVE_PIC": {
+        "description": "your alive pic or video",
+        "value": "",
+        "required": false
+      },
+      "API_HASH": {
+        "description": "Fill Api hash Take this value from My.telegram.org",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_2": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_3": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_4": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_5": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_6": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_7": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_8": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_9": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "BOT_TOKEN_10": {
+        "description": "Bot token",
+        "value": "",
+        "required": true
+      },
+      "SUDO_USERS": {
+            "description": "Sudo users id space by space or leave blank",
+            "value": "",
+            "required": false
+        },
+      "OWNER_ID": {
+            "description": "Sudo users id space by space",
+            "value": "",
+            "required": true
+        },
+      "HELP_PIC": {
+            "description": "Your Heroku api key to update your bot",
+            "value": "",
+            "required": false 
+        },
+       "PING_PIC": {
+            "description": "Your app name to Update your bot",
+          "value": "",
+          "required": false  
+        },
+      "COMMMAND_HANDLER": {
+            "description": "Your Spam Userbot's Command handler",
+            "value": ".",
+            "required": false  
+        }
     },
-    "API_HASH": {
-      "description": "Get this value from my.telegram.org.",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_2": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_3": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_4": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_5": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_6": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_7": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_8": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_9": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "BOT_TOKEN_10": {
-      "description": "Obtain a Telegram bot token by contacting @BotFather",
-      "required": true,
-      "value": ""
-    },
-    "COMMAND_HANDLER": {
-      "description": "!, ., !",
-      "required": true,
-      "value": "!"
-    },
-    "SUDO_USERS": {
-      "description": "SPLIT IF MORE THAN 1",
-      "required": true,
-      "value": ""
-    },
-    "OWNER_ID": {
-      "description": "ENTER ID OF BOT OWNER !",
-      "required": true,
-      "value": ""
-    },
-    "ALIVE_PIC": {
-      "description": "Link of Image !",
-      "required": true,
-      "value": ""
-    },
-    "HELP_PIC": {
-      "description": "Link of Image !",
-      "required": true,
-      "value": ""
-    },
-    "START_PIC": {
-      "description": "Link of Image !",
-      "required": true,
-      "value": ""
-    }
-  }
+    "buildpacks": [
+        {
+          "url": "heroku/python"
+        }
+    ]
 }
